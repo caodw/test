@@ -1,0 +1,15 @@
+.github-token
+
+# 依赖目录
+node_modules/
+
+# 开发环境文件
+.env
+.env.local
+
+# 构建产物
+dist/
+build/
+
+# 日志文件
+*.log
