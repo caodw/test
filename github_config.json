@@ -1,0 +1,41 @@
+{
+  "github": {
+    "owner": "caodw",
+    "repo": "test", 
+    "api_version": "2022-11-28",
+    "api_base_url": "https://api.github.com",
+    "verify_ssl": true,
+    "user_agent": "MyGitHubClient/1.0.0 (Windows11; .NET 6.0)",
+    "headers": {
+      "Accept": "application/vnd.github.v3+json"
+    },
+    "proxy_settings": {
+      "enable": true,
+      "url": "http://proxy.example.com:8080"
+    },
+    "permissions": ["repo", "admin:org", "read:user", "repo:status", "repo_deployment"],
+    "http_timeout": 30,
+    "default_branch": "main",
+    "network_timeout": 60,
+    "cache_config": {
+      "cache_dir": "./github_cache",
+      "auto_create": true,
+      "max_size": 1024,
+      "cache_cleanup_interval": 3600,
+      "expire_hours": 24
+    },
+    "retry_policy": {
+      "max_retries": 3,
+      "retry_delay": 1,
+      "retry_on": [500, 502, 503, 504, 403, 404, 429],
+      "backoff_factor": 2
+    },
+    "debug_mode": {
+      "enable": true,
+      "log_level": "info",
+      "log_path": "./github_debug.log",
+      "max_size_mb": 100,
+      "keep_days": 7
+    }
+  }
+}
