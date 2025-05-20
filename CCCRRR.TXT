@@ -1,4 +1,8 @@
 qwe
 asd
 zxc
+<<<<<<< HEAD
 opk
+=======
+opk
+>>>>>>> 61784201163fcbc6c634457ce4d91305ba69c624
